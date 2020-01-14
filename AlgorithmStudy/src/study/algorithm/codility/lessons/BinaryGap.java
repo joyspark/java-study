@@ -2,6 +2,17 @@ package study.algorithm.codility.lessons;
 
 import java.util.ArrayList;
 
+/**
+ * 코딜리티 lessons 1
+ * 
+ * 양의정수(N)을 받아 2진 표현으로 바꾸게 될 때에
+ * 1과 1사이에 가장 큰 0의 개수를 return
+ * (단, 1이 하나만 있거나 모두가 1인 경우는 return 0)
+ * 
+ * @since 2020-01-14
+ * @author joy.seo
+ *
+ */
 public class BinaryGap {
 
 	public static void main(String[] args) {
@@ -9,9 +20,6 @@ public class BinaryGap {
 	}
 	
 	/**
-	 * 양의정수(N)을 받아 2진 표현으로 바꾸게 될 때에
-	 * 1과 1사이에 가장 큰 0의 개수를 return
-	 * (단, 1이 하나만 있거나 모두가 1인 경우는 return 0)
 	 * @param N
 	 * @return
 	 */
