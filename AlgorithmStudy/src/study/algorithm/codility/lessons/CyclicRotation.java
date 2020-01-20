@@ -1,7 +1,7 @@
 package study.algorithm.codility.lessons;
 
 /**
- * 코딜리티 lessons 2
+ * 코딜리티 lessons 2-1
  * 
  * intput ⇒ int를 가진 배열A와 양의 정수 K
  * K 만큼 배열 안의 데이터를 오른쪽으로 한칸씩 이동, 
@@ -11,7 +11,7 @@ package study.algorithm.codility.lessons;
  * @since 2020-01-15
  * @author joy.seo
  */
-public class CycleRotation {
+public class CyclicRotation {
 
 	public static void main(String[] args) {
 		int[] A = {1,2};
