@@ -1,8 +1,6 @@
 package study.algorithm.codility.practice;
 
 /**
- * Naver clova에서 나왔던 문제
- * 
  * saddle point 개수 return  
  * 가운데 값이 행 양옆 값보다 작고, 열 위아래 값보다 클 때
  * OR
