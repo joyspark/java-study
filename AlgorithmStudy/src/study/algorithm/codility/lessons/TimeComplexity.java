@@ -14,11 +14,13 @@ public class TimeComplexity {
 	
 	public static void main(String[] args) {
 		// 1) Perm Missing Elem
-		int[] A = {3,1,2,4,3};
-		//System.out.println(solution1(A));
+		int[] A = {6,1,2,4,3};
+		System.out.println("문제 1 => " + solution1(A));
 		// 2) Tape Equilibrium
-		System.out.println(solution2(A));
+		int[] B = {3,1,2,4,3};
+		System.out.println("문제 2 => " + solution2(B));
 		// 3) Frog Jmp
+		System.out.println("문제 3 => " + solution3(999999,1000000000,10000000));
 	}
 	
 	/**
@@ -96,5 +98,29 @@ public class TimeComplexity {
 		}
 		
 		return min;
+	}
+	
+	
+	/**
+	 * X 에서 Y 또는 Y이상으로 가려면 
+	 * 뛰어야할 가장 적은 jump 수
+	 * 
+	 * @param X 현재 위치
+	 * @param Y 가려는 위치
+	 * @param D 한번에 jump 할 수 있는 거리
+	 * @return X-> Y까지 가려면 뛰어야하는 jump 수
+	 */
+	public static int solution3(int X, int Y, int D) {
+		int jump = 0;
+
+		int target = Y - X;
+		int n = target/D;
+		
+		if((D*n)+X == Y)
+			jump = n;
+		else
+			jump = n+1;
+		
+		return jump;
 	}
 }
